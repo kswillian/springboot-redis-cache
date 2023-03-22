@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:db_municipios
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+    password: RedisPass
