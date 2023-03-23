@@ -18,10 +18,7 @@ public class MunicipioControllerImpl implements MunicipioController {
     @Override
     public ResponseEntity<ListaMunicipios> findAll() {
 
-        var response = ListaMunicipios
-                .builder()
-                .municipios(service.listAll())
-                .build();
+        var response = new ListaMunicipios(service.listAll());
 
         return ResponseEntity.ok(response);
 

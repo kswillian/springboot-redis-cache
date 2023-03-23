@@ -6,4 +6,4 @@ services:
     restart: always
     ports:
       - '6379:6379'
-    command: redis-server --requirepass RedisPass
+    command: redis-server --requirepass RedisPass # Executando o Redis e definindo uma senha personalizada
